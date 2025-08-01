@@ -1,0 +1,64 @@
+/* src/components/Testimonials.css */
+.testimonial-section {
+  width: 100%;
+  padding: 20px 50px 100px 50px;
+  text-align: center;
+}
+
+.testimonial-heading {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #8c1732;
+}
+/* Stylish testimonial card */
+.testimonial-card {
+  position: relative;
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.testimonial-card img{
+    width: 70px;
+    height: 70px;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.testimonial-text {
+  font-size: 20px;
+  font-style: italic;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.testimonial-text::before {
+  content: "";
+  font-size: 60px;
+  color: #ccc;
+  position: absolute;
+  top: -30px;
+  left: -10px;
+  z-index: -1;
+}
+
+.testimonial-name {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #555;
+  text-align: right;
+}

@@ -1,0 +1,79 @@
+.services {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 100px;
+}
+.services h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.services h2 span {
+  color: #8c1732;
+  font-size: 40px;
+}
+.servicesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 130px;
+}
+.servicesContainer h3{
+    font-size: 20px;
+    font-family: "League Spartan", sans-serif;
+    margin-bottom: 10px;
+    color: #fff;
+    z-index: 2;
+}
+.servicesContainer p{
+    font-weight: 600;
+    font-size: 16px;
+    z-index: 1;
+}
+.servicesContainer > div{
+    width: 20%;
+    height: 500px;
+    padding: 20px 20px 50px 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+    color: #fff;
+}
+#planning, #entertain{
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    justify-content: flex-end;
+}
+#fruit, #rental{
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    justify-content: flex-start;
+}
+#planning::before, #entertain::before, #rental::before, #fruit::before{
+    content: "";
+    position: absolute;
+    inset: 0 0 0 0;
+    opacity: 0.4;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+}
+#planning::before{
+    background-image: url(/planning.jpg);
+}
+#entertain::before{
+    background-image: url(/entertainments.jpg);
+}
+#rental::before{
+    background-image: url(/rentals.jpg);
+}
+#fruit::before{
+    background-image: url(/fruit.jpg);
+}

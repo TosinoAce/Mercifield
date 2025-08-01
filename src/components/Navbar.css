@@ -1,0 +1,39 @@
+header{
+    width: fit-content;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    top: 50px;
+    left: 50%;
+    transform: translatex(-50%);
+    background-color: #f8f7f3;
+    padding: 8px 8px 8px 25px;
+    border-radius: 26px;
+    z-index: 10;
+}
+.navigation , .navigation ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.navigation ul li{
+    cursor: pointer;
+    color: #000;
+}
+.navigation button{
+    background: transparent;
+    padding: 10px 20px;
+    border: 2px solid #8c1732;
+    color: #8c1732;
+    border-radius: 24px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+header img{
+    width: 30px;
+    height: 30px;
+}
