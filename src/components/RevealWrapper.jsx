@@ -7,7 +7,7 @@ const containerVariants = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.5, // Delay each child item
+      staggerChildren: 0.3, // Delay each child item
     },
   },
 };
@@ -17,7 +17,7 @@ const childVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 2.0 },
+    transition: { duration: 0.5 },
   },
 };
 
@@ -51,7 +51,7 @@ const RevealWrapper = ({ children, isStaggered = false, className = "" }) => {
       className={className}
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 2.0 }}
+      transition={{ duration: 0.5 }}
       exit={{ opacity: 0 }}
       viewport={{ once: true, amount: 0.3 }}
     >

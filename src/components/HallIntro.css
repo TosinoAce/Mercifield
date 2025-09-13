@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 150px 50px 100px 50px;
+    padding: 50px 50px 100px 50px;
 }
 .introHall > h2{
     font-size: 40px;
@@ -13,6 +13,17 @@
 .introHall > h2 > span{
     color: #8c1732;
     font-size: 40px;
+}
+.introHall > h3{
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+}
+.introHall > h3 > span{
+  font-size: 50px;
+  color: #8c1732;
+  font-family: "League Spartan", sans-serif;
+  text-transform: capitalize;
 }
 .introHall > p{
     text-align: center;

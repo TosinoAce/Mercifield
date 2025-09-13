@@ -15,7 +15,9 @@ import "./HallIntro.css";
 const HallIntro = () => {
   return (
     <section className="introHall">
-      <h2>Our <span>Premium</span> Event Halls</h2>
+      <h2>
+        Our <span>Premium</span> Event Halls
+      </h2>
       <p>
         Welcome to Mercifield Hall – Where Moments Turn Into Memories. <br />{" "}
         Our elegant, spacious hall is designed to bring your events to life —
@@ -98,6 +100,12 @@ const HallIntro = () => {
           </p>
         </div>
       </div>
+      <h3>
+        Experience the elegance of our two exquisite event halls — a refined
+        <span> Mini hall</span> space perfect for up to <span>60 guests</span>, ideal for intimate celebrations, and
+        a <span>majestic hall</span> that graciously hosts up to <span>1,000 guests</span> for unforgettable
+        occasions.
+      </h3>
     </section>
   );
 };

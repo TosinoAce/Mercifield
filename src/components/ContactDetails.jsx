@@ -1,40 +1,82 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import "./ContactDetails.css";
 
 const ContactDetails = () => {
+  const form = useRef();
+  const [messageSent, setMessageSent] = useState(false);
+  const [error, setError] = useState(null);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_8t1hvom", // your service ID
+        "template_47o8lz6", // your template ID
+        form.current,
+        "vris0xm7VHDmNzXKM" // your public key
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setMessageSent(true);
+          setError(null);
+          form.current.reset();
+
+          setTimeout(() => {
+            setMessageSent(false);
+          }, 4000);
+        },
+        (error) => {
+          console.log(error.text);
+          setError("Message failed to send. Please try again.");
+        }
+      );
+  };
+
   return (
     <section id="contact-details">
       <h2>Contact our team</h2>
       <p>
-        Got any questions about the our seervices? We're here to help. Chat to
-        our friendly team 24/7 and get onboard in less than 5 minutes.
+        Got any questions about our services? We're here to help. Chat with our
+        friendly team 24/7 and get onboard in less than 5 minutes.
       </p>
+
       <div id="contact-container">
         <div>
-          <form id="c-form" action="">
+          <form id="c-form" ref={form} onSubmit={sendEmail}>
             <div id="name-section">
               <div>
                 <p>First Name</p>
-                <input type="text" placeholder="John" />
+                <input type="text" name="first_name" required placeholder="John" />
               </div>
               <div>
                 <p>Last Name</p>
-                <input type="text" placeholder="Doe" />
+                <input type="text" name="last_name" required placeholder="Doe" />
               </div>
             </div>
+
             <p>Email Address</p>
-            <input type="email" placeholder="example@gmail.com" />
+            <input type="email" name="user_email" required placeholder="example@gmail.com" />
+
             <p>Phone Number</p>
-            <input type="number" name="" id="" placeholder="+234 812342157" />
+            <input type="tel" name="phone" placeholder="+234 812342157" />
+
             <p>Message</p>
-            <textarea name="" id="" placeholder="Leave us a message"></textarea>
+            <textarea name="message" required placeholder="Leave us a message"></textarea>
+
             <br />
             <button type="submit">Send Message</button>
+
+            {messageSent && <p className="success-message">✅ Message sent successfully!</p>}
+            {error && <p className="error-message">❌ {error}</p>}
           </form>
         </div>
+
         <div id="contact-link-container">
           <h3>Follow Us</h3>
-          <p>Connect with us on out Social media platforms</p>
+          <p>Connect with us on our social media platforms</p>
           <div id="contact-socials">
             <div>
               <img src="/facebook.svg" alt="Facebook" />
@@ -49,14 +91,18 @@ const ContactDetails = () => {
               <p>X</p>
             </div>
           </div>
+
           <h3>Address</h3>
           <p>
-            23 Stone Road, Agbarico, Opposite, FRSC, Onireke Ibadan, Oyo State
+            23 Stone Road, Agbarico, Opposite FRSC, Onireke Ibadan, Oyo State
           </p>
+
           <h3>Call Us</h3>
           <p>+(234) 809-181-2181</p>
+
           <h3>Email</h3>
           <p>mercifieldentofficial@gmail.com</p>
+
           <h3>Business Hours</h3>
           <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
         </div>

@@ -27,7 +27,7 @@
 #c-form input,
 textarea {
   background-color: transparent;
-  color: #fafafa;
+  color: #000;
   border: 1px solid #c9c8c8;
   padding: 10px 12px;
   border-radius: 8px;
@@ -43,7 +43,7 @@ textarea {
 }
 #c-form input::placeholder,
 textarea::placeholder {
-  color: #fafafa;
+  color: #000;
 }
 textarea {
   height: 150px;

@@ -1,5 +1,5 @@
 footer {
-  padding: 50px 100px 20px 100px;
+  padding: 50px 50px 20px 50px;
   background: #ffffff;
   background: linear-gradient(
     180deg,
@@ -76,4 +76,14 @@ input{
 .socials a{
   color: #8c1732;
   cursor: pointer;
+}
+
+@media (max-width: 1270px) {
+  footer{
+    padding: 20px;
+  }
+  .m-foot{
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
 }
