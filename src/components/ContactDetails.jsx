@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./ContactDetails.css";
+import { Link } from "react-router-dom";
 
 const ContactDetails = () => {
   const form = useRef();
@@ -39,8 +40,9 @@ const ContactDetails = () => {
     <section id="contact-details">
       <h2>Contact our team</h2>
       <p>
-        Got any questions about our services? We're here to help. Chat with our
-        friendly team 24/7 and get onboard in less than 5 minutes.
+        Would you like to rent a Hall or you got any questions about our
+        services? We're here to help. Chat with our friendly team 24/7 and get
+        onboard in less than 5 minutes.
       </p>
 
       <div id="contact-container">
@@ -49,27 +51,48 @@ const ContactDetails = () => {
             <div id="name-section">
               <div>
                 <p>First Name</p>
-                <input type="text" name="first_name" required placeholder="John" />
+                <input
+                  type="text"
+                  name="first_name"
+                  required
+                  placeholder="John"
+                />
               </div>
               <div>
                 <p>Last Name</p>
-                <input type="text" name="last_name" required placeholder="Doe" />
+                <input
+                  type="text"
+                  name="last_name"
+                  required
+                  placeholder="Doe"
+                />
               </div>
             </div>
 
             <p>Email Address</p>
-            <input type="email" name="user_email" required placeholder="example@gmail.com" />
+            <input
+              type="email"
+              name="user_email"
+              required
+              placeholder="example@gmail.com"
+            />
 
             <p>Phone Number</p>
             <input type="tel" name="phone" placeholder="+234 812342157" />
 
             <p>Message</p>
-            <textarea name="message" required placeholder="Leave us a message"></textarea>
+            <textarea
+              name="message"
+              required
+              placeholder="Leave us a message"
+            ></textarea>
 
             <br />
             <button type="submit">Send Message</button>
 
-            {messageSent && <p className="success-message">✅ Message sent successfully!</p>}
+            {messageSent && (
+              <p className="success-message">✅ Message sent successfully!</p>
+            )}
             {error && <p className="error-message">❌ {error}</p>}
           </form>
         </div>
@@ -78,18 +101,24 @@ const ContactDetails = () => {
           <h3>Follow Us</h3>
           <p>Connect with us on our social media platforms</p>
           <div id="contact-socials">
-            <div>
-              <img src="/facebook.svg" alt="Facebook" />
-              <p>Facebook</p>
-            </div>
-            <div>
-              <img src="/instagram.svg" alt="Instagram" />
-              <p>Instagram</p>
-            </div>
-            <div>
-              <img src="/icons8-x.svg" alt="X" />
-              <p>X</p>
-            </div>
+            <Link to="https://web.facebook.com/people/Mercifield-Fruities/100063911060466/">
+              <div>
+                <img src="/facebook.svg" alt="Facebook" />
+                <p>Facebook</p>
+              </div>
+            </Link>
+            <Link to="https://www.instagram.com/mercifield_event_place/">
+              <div>
+                <img src="/instagram.svg" alt="Instagram" />
+                <p>Instagram</p>
+              </div>
+            </Link>
+            <Link to="https://www.tiktok.com/@mercifield_events">
+              <div>
+                <img src="/icons8-tiktok-logo-48.png" alt="Tiktok" />
+                <p>Tiktok</p>
+              </div>
+            </Link>
           </div>
 
           <h3>Address</h3>

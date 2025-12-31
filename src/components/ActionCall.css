@@ -50,9 +50,18 @@
   margin-bottom: 40px;
 }
 
-
-@media (max-width: 1075px){
-  .Action{
+@media (max-width: 1075px) {
+  .Action {
     padding: 20px;
+  }
+  .Action h2 {
+    font-size: 40px;
+  }
+  .Action p {
+    width: 100%;
+    margin: auto;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 40px;
   }
 }

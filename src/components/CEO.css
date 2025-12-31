@@ -15,6 +15,7 @@
     font-size: 40px;
     font-family: "League Spartan", sans-serif;
     margin-bottom: 30px;
+    text-align: center;
 }
 .ceo h2 span{
     color: #8c1732;
@@ -34,4 +35,31 @@
     line-height: 140%;
     font-size: 16px;
     text-align: justify;
+}
+.ceo span{
+    color: #8c1732;
+    font-weight: bold;
+}
+
+@media (max-width: 981px){
+    .ceo h2{
+    font-size: 30px;
+    font-family: "League Spartan", sans-serif;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.ceo h2 span{
+    color: #8c1732;
+    font-size: 30px;
+    font-weight: bolder;
+}.ceo{
+    padding: 0px 20px;
+}
+.ceo > div{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}.ceo p{
+    text-align: center;
+}
 }

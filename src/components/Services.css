@@ -90,6 +90,40 @@
 
 @media (max-width: 1075px) {
   .services {
-    padding: 50px 20px;
+    padding: 50px 10px;
   }
+  .servicesContainer {
+    padding: 0;
+    margin-top: 50px;
+  }
+  .servicesContainer > div {
+  width: 20%;
+  min-width: 340px;
+  height: 500px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+  color: #fff;
+}
+#planning,
+#entertain {
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#fruit,
+#rental {
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 }

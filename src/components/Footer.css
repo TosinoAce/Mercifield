@@ -77,7 +77,12 @@ input{
   color: #8c1732;
   cursor: pointer;
 }
-
+#link li{
+  cursor: pointer;
+  color: #000;
+}#link2 li{
+  cursor: pointer;
+}
 @media (max-width: 1270px) {
   footer{
     padding: 20px;

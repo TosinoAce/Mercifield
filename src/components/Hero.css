@@ -60,3 +60,19 @@ h1 {
   background-color: #8c1732;
   color: #ffffff;
 }
+
+
+@media (max-width: 900px) {
+h1 {
+  font-size: 30px;
+  font-family: "Quahon", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  line-height: 110%;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+#logo {
+  width: 210px;
+}
+}

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import RevealWrapper from "./RevealWrapper";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
 const Footer = () => {
@@ -93,20 +94,16 @@ const Footer = () => {
                     <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
                   </svg>
                 </a>
-                <a href="#">
+                <a href="https://www.tiktok.com/@mercifield_events">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="30"
                     height="30"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-twitter h-5 w-5"
+                    fill="currentColor"
+                    class="bi bi-tiktok"
+                    viewBox="0 0 16 16"
                   >
-                    <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                    <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
                   </svg>
                 </a>
               </div>
@@ -114,17 +111,23 @@ const Footer = () => {
 
             <div key="col-2">
               <h2>Quick Links</h2>
-              <ul>
-                <li>Services</li>
-                <li>Halls</li>
-                <li>About Us</li>
-                <li>Contact Us</li>
+              <ul id="link">
+                <a href="/#services"><li>Services</li></a>
+                <Link to="/halls">
+                  <li>Halls</li>
+                </Link>
+                <Link to="/about">
+                  <li>About Us</li>
+                </Link>
+                <Link to="/contact">
+                  <li>Contact Us</li>
+                </Link>
               </ul>
             </div>,
 
             <div key="col-3">
               <h2>Legal</h2>
-              <ul>
+              <ul id="link2">
                 <li>Privacy Policy</li>
                 <li>Terms of Service</li>
               </ul>

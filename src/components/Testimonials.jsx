@@ -10,34 +10,22 @@ import "./Testimonials.css"; // custom styling
 
 const testimonials = [
   {
-    image: "/testimonial.avif",
-    name: "Sarah O.",
+    image: "/petra.jpg",
+    name: "Petra Church.",
     feedback:
-      "Working with this team was a dream come true. They took all the pressure off my shoulders and made planning our wedding seamless. Every vendor they recommended was professional, and the coordination on the event day was impeccable. I felt like a guest at my own event — and that’s the best feeling",
+      "Mercifield Events supported Petra Church during the Total Immersion Program with strong coordination and focus. The setup aligned with the purpose of the program and supported a calm and organized environment. Transitions between sessions stayed smooth and distraction free. Participants remained attentive and comfortable throughout the program. The team showed respect for the program structure and values. We are grateful for the support and delivery.",
   },
   {
-    image: "/testimonial.avif",
-    name: "James T.",
+    image: "/Zenith-Bank.webp",
+    name: "Zenith Bank.",
     feedback:
-      "This company MerciField made my 50th birthday celebration unforgettable! They understood my style perfectly, from the elegant flower arrangements to the vibrant entertainment lineup. Every little touch felt so personal. Thank you for making me feel so celebrated",
+      "Mercifield Events delivered a smooth and well organized end of year party for Zenith Bank. The planning showed clear structure from start to finish. The venue setup, timing, and coordination stayed on point throughout the event. Guests enjoyed the experience and engagement stayed high all through the night. The outcome met our expectations and reflected strong attention to detail. We appreciate the professionalism and commitment shown by the Mercifield Events team.",
   },
   {
-    image: "/testimonial.avif",
-    name: "Amaka U.",
+    image: "/brownroof.jpg",
+    name: "Brown Roof Party.",
     feedback:
-      "I loved how the planning team remained calm and responsive even when we had last-minute changes. Their creativity, flexibility, and commitment made the event feel effortless. Everyone kept asking, ‘Who planned this?!’ I’m proud to say it was this amazing team!",
-  },
-  {
-    image: "/testimonial.avif",
-    name: "Amaka U.",
-    feedback:
-      "I cannot recommend this event company enough! From the very first consultation, they listened closely to my ideas and brought them to life in ways I couldn’t have imagined. The decor, organization, and attention to detail were all flawless. My guests are still talking about how amazing the evening was!",
-  },
-  {
-    image: "/testimonial.avif",
-    name: "Ademola Omola",
-    feedback:
-      "As a corporate client, I’ve worked with several event organizers, but none compare to the professionalism and creativity of this company. Our annual gala was elevated beyond expectations, with smooth logistics and stunning visual presentation. We’ve already booked them for next year",
+      "Mercifield Events handled the Brown Roof Rave Party with precision and energy. The atmosphere matched the vision of the event perfectly. Sound, lighting, and crowd flow worked together without issues. Attendees responded positively and participation remained strong until the close of the event. The execution reflected solid planning and clear understanding of rave culture. We value the effort and results delivered.",
   },
 ];
 

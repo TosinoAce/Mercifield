@@ -11,7 +11,7 @@ const CEO = () => {
         <img src="/ceo.jpg" alt="CEO-Ayo Mutiat Oyebisi" />
         <div>
           <p>
-            Meet Ayo Mutiat Oyebisi, the heart and creative mind behind
+            Meet <span>Ayo Mutiat Oyebisi</span>, the heart and creative mind behind
             Mercifield Event Place. She's not just a planner — she's a
             storyteller who believes every event should reflect joy, elegance,
             and the personality of the people being celebrated.

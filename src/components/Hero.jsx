@@ -21,7 +21,7 @@ const Hero = () => {
             </p>
           </div>,
           <div className="Callbtn">
-            <Link to="/halls"><button id="book">Book a Hall</button></Link>
+            <Link to="/contact"><button id="book">Book a Hall</button></Link>
             <a href="/#services"><button>Explore Services</button></a>
           </div>,
         ]}
